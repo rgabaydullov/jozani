@@ -1,0 +1,60 @@
+.lottie {
+  &Svg {
+    width: auto !important;
+    height: auto !important;
+  }
+
+  @media screen and (min-width: 768px) {
+    &Svg {
+      width: 100% !important;
+    }
+  }
+}
+
+.block {
+  display: flex;
+  margin-top: 4.8rem;
+  flex-direction: column;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  &HowItWorks {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-width: 360px;
+    width: 60%;
+
+    .feature {
+      display: flex;
+      align-items: center;
+      margin: 1.6rem 0;
+    }
+  }
+
+  &MaxContent {
+    margin: 2.4rem -1.6rem;
+  }
+
+  &DailyDigest {
+    display: flex;
+    margin: 2.4rem 0;
+    padding: 0 2.4rem 2.4rem 1.2rem;
+    width: max-content;
+  }
+
+  @media screen and (min-width: 768px) {
+    overflow-x: auto;
+    overflow-y: auto;
+
+    &MaxContent {
+      align-items: center;
+      margin: 0;
+    }
+
+    &DailyDigest {
+      padding: 0;
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@jozani/uikit",
+  "version": "0.0.7",
+  "peerDependencies": {
+    "dayjs": "^1.11.5",
+    "detect-browser": "^5.3.0",
+    "formik": "^2.2.9",
+    "formik-mui": "^5.0.0-alpha.0",
+    "nanoid": "^4.0.0",
+    "normalize.css": "^8.0.1"
+  }
+}
