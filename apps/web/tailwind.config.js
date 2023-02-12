@@ -1,0 +1,52 @@
+/* eslint-disable @typescript-eslint/naming-convention */
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  mode: 'jit',
+  purge: [
+    './widgets/**/**/*.tsx',
+    './shared/**/*.tsx',
+    './pages/**/*.tsx',
+    '../../libs/uikit/src/**/*.tsx',
+  ],
+  // darkMode: false,
+  content: [
+    './widgets/**/*.tsx',
+    './shared/**/*.tsx',
+    './pages/**/*.tsx',
+    '../../libs/uikit/src/**/*.tsx',
+  ],
+  theme: {
+    extend: {},
+    spacing: {
+      '0.5': '.2rem',
+      '1': '.4rem',
+      '1.5': '.6rem',
+      '2': '.8rem',
+      '2.5': '1rem',
+      '3': '1.2rem',
+      '3.5': '1.4rem',
+      '4': '1.6rem',
+      '5': '2rem',
+      '6': '2.4rem',
+      '7': '2.8rem',
+      '8': '3.2rem',
+      '9': '3.6rem',
+      '10': '4rem',
+      '11': '4.4rem',
+      '12': '4.8rem',
+      '14': '5.6rem',
+      '16': '6.4rem',
+      '20': '8rem',
+      '24': '9.6rem',
+      '28': '11.2rem',
+      '32': '12.8rem',
+      '36': '14.4rem',
+      '40': '16rem',
+      '44': '17.6rem',
+    },
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
+}

@@ -1,7 +1,7 @@
 import { Breakpoints } from '../../types';
 
 const BREAKPOINTS: Record<Breakpoints, number> = {
-  mobile: 390,
+  mobile: 370,
   xs: 480,
   sm: 576,
   md: 768,

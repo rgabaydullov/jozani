@@ -4,5 +4,4 @@ import styled from 'styled-components';
 export const StyledCardPromo = styled(Card)`
   display: flex;
   flex-direction: column;
-  padding: 1.6rem;
 `;

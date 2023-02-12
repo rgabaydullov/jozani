@@ -30,7 +30,6 @@ export const StyledCardDigest = styled(Card)`
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  padding: 1.6rem;
   background: ${({ type, bgColors }: Pick<ICardDigestProps, 'type' | 'bgColors'>) => {
     const [from, to] = get(bgColors, capitalize(type), DEFAULT_COLORS);
 

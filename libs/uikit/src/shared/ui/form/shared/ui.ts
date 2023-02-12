@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
-import { getCssVar } from 'libs/uikit/src/lib';
+import { getCssVar } from '../../../../lib';
 import { IFormComponentProps } from '../types';
 
 export const StyledFormWrapper = styled.div`

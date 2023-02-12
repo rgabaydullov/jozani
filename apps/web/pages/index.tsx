@@ -7,7 +7,7 @@ import {
   Button,
   Col, Row, SafeView, Typography, useLottie,
 } from '@jozani/uikit';
-import { CardDigest, CardPromo, Digest, HeroPromo, SectionPromo } from '../widgets';
+import { CardDigest, CardPromo, Digest, Footer, HeroPromo, SectionPromo } from '../widgets';
 import { IBasePage } from './types';
 import {
   AnimationSubheadVariants,
@@ -113,7 +113,11 @@ const Index: IBasePage = () => {
                   maxWidth: 500,
                 }}
               >
-                <motion.img
+                <img
+                  src="/assets/challenge-friends.png"
+                  alt="Challenge"
+                />
+                {/* <motion.img
                   src="/assets/challenge-friends.png"
                   alt="Challenge"
                   initial={AnimationSubheadVariants.Hidden}
@@ -122,7 +126,7 @@ const Index: IBasePage = () => {
                   transition={{
                     duration: ANIMATION_SUBHEAD_TRANSITION_DURATION,
                   }}
-                />
+                /> */}
               </div>
             </Col>
           </Row>
@@ -162,62 +166,62 @@ const Index: IBasePage = () => {
         >
           <Col mobile={12} md={4} lg={4}>
             <CardPromo>
-              <div style={{ height: 120, width: 120 }}>
+              <div style={{ margin: '0 auto', height: 120, width: 120 }}>
                 <img src="/assets/create-challenge.png" />
               </div>
 
               <div className="mt-6" />
 
-              <Typography variant="h5">
+              <Typography variant="h5" textAlign="center">
                 Instant Challenges
               </Typography>
 
               <div className="mt-4" />
 
               <Typography variant="body1" textAlign="center">
-                Release the challenge in less than 10 seconds.
+                Release the challenge immediately
                 <br />
-                Ready to use immediately
+                Ready to use right after creation
               </Typography>
             </CardPromo>
           </Col>
 
           <Col mobile={12} md={4} lg={4}>
             <CardPromo>
-              <div style={{ height: 120, width: 120 }}>
+              <div style={{ margin: '0 auto', height: 120, width: 120 }}>
                 <img src="/assets/pay-challenge.png" />
               </div>
 
               <div className="mt-6" />
 
-              <Typography variant="h5">
+              <Typography variant="h5" textAlign="center">
                 Secure Payments
               </Typography>
 
               <div className="mt-4" />
 
               <Typography variant="body1" textAlign="center">
-                Most of us love to use USDT and we give you the opportunity to proceed by crypto
+                Most of us love to use cyrpto and we give you the opportunity to proceed
               </Typography>
             </CardPromo>
           </Col>
 
           <Col mobile={12} md={4} lg={4}>
             <CardPromo>
-              <div style={{ height: 120, width: 120 }}>
+              <div style={{ margin: '0 auto', height: 120, width: 120 }}>
                 <img src="/assets/challenge.png" />
               </div>
 
               <div className="mt-6" />
 
-              <Typography variant="h5">
+              <Typography variant="h5" textAlign="center">
                 Trusted by Users
               </Typography>
 
               <div className="mt-4" />
 
               <Typography variant="body1" textAlign="center">
-                Only you decide on every challenge. All funds will be protected until you release
+                Only you decide on every challenge. All funds stay protected until you release
               </Typography>
             </CardPromo>
           </Col>
@@ -269,7 +273,7 @@ const Index: IBasePage = () => {
 
             <div className="ml-12">
               <Typography variant="h6">
-                Come up with a Goal
+                Set the Goal
               </Typography>
 
               <Typography variant="body1">
@@ -309,7 +313,9 @@ const Index: IBasePage = () => {
               </Typography>
 
               <Typography variant="body1">
-                No loses at all!
+                Complete profit.
+                <br />
+                No loss at all!
                 <br />
                 Get back your Pledge or Donate.
               </Typography>
@@ -344,7 +350,7 @@ const Index: IBasePage = () => {
                 <CardDigest
                   type={Digest.Apricot}
                   // bgColors={CATEGORY_COLORS}
-                  title="Lose weight now"
+                  title="Lose weight"
                 >
                   Daily fitness to claim the goal
                 </CardDigest>
@@ -375,6 +381,12 @@ const Index: IBasePage = () => {
       </SafeView>
 
       <div className="mt-12" />
+
+      <Footer>
+        <Typography variant="h6">
+          Paylol
+        </Typography>
+      </Footer>
 
     </>
   );

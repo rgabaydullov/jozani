@@ -33,8 +33,6 @@ const Header: React.FC<IHeaderProps> = ({ children }) => {
       <HeaderContainer>
         {children}
       </HeaderContainer>
-
-      {!isActive && (<Divider />)}
     </HeaderWrapper>
   );
 };

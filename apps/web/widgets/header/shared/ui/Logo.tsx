@@ -1,4 +1,6 @@
+import { Link } from '@jozani/uikit';
 import React from 'react';
+import NextLink from 'next/link';
 import styled from 'styled-components';
 
 const LogoCaption = styled.div`
@@ -17,10 +19,12 @@ const Logo: React.FC = () => {
   const randomEmoji = String.fromCodePoint(+`1285${randomInt(13, 91)}`);
 
   return (
-    <LogoCaption>
-      Pay L{randomEmoji}L
-    </LogoCaption>
+    <Link to="/" component={NextLink}>
+      <LogoCaption>
+        Pay L{randomEmoji}L
+      </LogoCaption>
+    </Link>
   );
 };
 
-export default Logo;
+export default React.memo(Logo);

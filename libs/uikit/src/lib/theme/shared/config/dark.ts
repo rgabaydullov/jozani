@@ -30,7 +30,7 @@ const DARK_THEME = (theme: ITheme) => {
       },
       secondary: {
         // Buttons
-        main: grey[100],
+        main: grey[500],
       },
       info: {
         // Buttons
@@ -105,6 +105,7 @@ const DARK_THEME = (theme: ITheme) => {
       },
       body2: {
         fontFamily,
+        fontWeight: getCssVar('font', 'semi-bold'),
         color: black[100],
         fontSize: getCssVar('font', 'large'),
         lineHeight: getSizeUnit(22),

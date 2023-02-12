@@ -7,4 +7,5 @@ export interface ICardProps extends Omit<CardProps,
   isFullWidth?: boolean;
   isFullHeight?: boolean;
   title?: ReactNode;
+  footer?: ReactNode;
 };

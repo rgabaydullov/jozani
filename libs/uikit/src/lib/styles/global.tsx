@@ -10,6 +10,7 @@ import {
   black,
   white,
   BREAKPOINTS,
+  purple,
 } from '../theme';
 import { map2CssVars } from './helpers';
 
@@ -25,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
     ${map2CssVars(blue, 'blue')}
     ${map2CssVars(grey, 'grey')}
     ${map2CssVars(yellow, 'yellow')}
+    ${map2CssVars(purple, 'purple')}
     ${map2CssVars(black, 'black')}
     ${map2CssVars(white, 'white')}
   }

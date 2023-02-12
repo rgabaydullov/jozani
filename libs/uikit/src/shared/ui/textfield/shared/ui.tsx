@@ -1,6 +1,6 @@
 import { TextField as MuiTextField } from '@mui/material';
-import { getCssVar } from 'libs/uikit/src/lib';
 import styled from 'styled-components';
+import { getCssVar } from '../../../../lib';
 import { ITextFieldProps } from '../types';
 
 export const StyledTextField = styled(MuiTextField)`
@@ -15,8 +15,14 @@ export const StyledTextField = styled(MuiTextField)`
 
   & > div {
     padding: .8rem 1.2rem;
-    background: ${getCssVar('grey', 950)};
+    background: ${getCssVar('grey', 100)};
     font-size: ${getCssVar('font', 'large')};
+    color: currentColor;
+
+    &[class*=disabled] {
+      color: currentColor;
+      -webkit-text-fill-color: currentColor;
+    }
   }
 
   &.contrast > div, & > div[class*=focused] {
@@ -26,6 +32,11 @@ export const StyledTextField = styled(MuiTextField)`
   input {
     padding: 0;
     font-weight: ${getCssVar('font', 'semi-bold')};
+
+    &[class*=disabled], &:disabled {
+      color: currentColor;
+      -webkit-text-fill-color: currentColor;
+    }
   }
 
   fieldset {

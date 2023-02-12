@@ -17,23 +17,28 @@ export const StyledCard = styled(MuiCard)`
 `;
 
 export const CardTitleWrapper = styled.div`
-  padding: 2.4rem;
-  font-size: ${getCssVar('font', 'h5')};
+  padding: 1.6rem 2.4rem 0;
   font-weight: ${getCssVar('font', 'bold')};
 
   @media screen and (max-width: ${BREAKPOINTS.sm}px) {
-    padding: 1rem .8rem;
-    .ml-auto > button {
-      padding: 0 .5rem;
-      width: 120px;
-    }
+    padding: 1.6rem 1.6rem 0;
   }
 `;
 
 export const CardContainer = styled.div`
-  padding: 3.2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+  justify-content: inherit;
+  padding: 1.6rem 2.4rem;
+  height: inherit;
 
   @media screen and (max-width: ${BREAKPOINTS.sm}px) {
-    padding: .6rem;
+    padding: 1.6rem;
   }
+`;
+
+export const CardFooter = styled.div`
+  display: flex;
+  padding: 1.6rem;
 `;

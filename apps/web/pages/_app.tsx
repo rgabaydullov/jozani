@@ -24,7 +24,7 @@ const BaseApp: React.FC<AppProps> = (props) => {
     isCommonPage = false,
     withMenu = false,
     renderHeader,
-  } = pick(get(Component, 'type'), [
+  }: any = pick(get(Component, 'type'), [
     'isCommonPage',
     'withMenu',
     'renderHeader',

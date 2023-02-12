@@ -1,5 +1,6 @@
 import { Button, ScrollView, useModal } from '@jozani/uikit';
 import React from 'react';
+import NextLink from 'next/link';
 import { Header, HeaderFit, HeaderLogo } from '../widgets';
 import { IAppProps } from './types';
 
@@ -35,7 +36,9 @@ const Common: React.FC<IAppProps> = ({
           <Button
             size="large"
             variant="contained"
-            onClick={open}
+            to="/challenge"
+            component={NextLink}
+            // onClick={open}
           >
             Go Challenge!
           </Button>

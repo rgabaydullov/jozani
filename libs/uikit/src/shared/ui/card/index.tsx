@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import Divider from '../divider';
 import {
   CardContainer,
+  CardFooter,
   CardTitleWrapper, StyledCard,
 } from './shared/ui';
 import { ICardProps } from './types';
@@ -11,36 +12,32 @@ const Card: React.FC<ICardProps> = ({
   isFullHeight = false,
   title,
   children,
+  footer,
   ...props
 }) => {
   const titleComponent = useMemo(() => {
     if (title) {
       return (
-        <>
-          <CardTitleWrapper>
-            {title}
-          </CardTitleWrapper>
-
-          <Divider />
-        </>
+        <CardTitleWrapper>
+          {title}
+        </CardTitleWrapper>
       );
     }
 
     return null;
   }, [title]);
 
-  // Content depends on 'title' prop
-  const content = useMemo(() => {
-    if (title) {
+  const footerContent = useMemo(() => {
+    if (footer) {
       return (
-        <CardContainer>
-          {children}
-        </CardContainer>
+        <CardFooter>
+          {footer}
+        </CardFooter>
       );
     }
 
-    return children;
-  }, [children, title]);
+    return null;
+  }, [footer]);
 
   return (
     <StyledCard
@@ -50,7 +47,11 @@ const Card: React.FC<ICardProps> = ({
     >
       {titleComponent}
 
-      {content}
+      <CardContainer>
+        {children}
+      </CardContainer>
+
+      {footerContent}
     </StyledCard>
   );
 };

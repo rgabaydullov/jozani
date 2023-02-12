@@ -1,7 +1,7 @@
 import { Divider as MuiDivider } from '@mui/material';
-import { getCssVar } from 'libs/uikit/src/lib';
+import { getCssVar } from '../../../../lib';
 import styled from 'styled-components';
 
 export const StyledDivider = styled(MuiDivider)`
-  background: ${getCssVar('white', 30)};
+  background: ${getCssVar('grey', 100)};
 `;
