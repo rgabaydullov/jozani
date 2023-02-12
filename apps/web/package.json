@@ -1,8 +1,0 @@
-{
-  "name": "web",
-  "version": "0.0.0",
-  "scripts": {
-    "build:tailwind": "tailwindcss build -i ./lib/styles/tailwind/input.css -o ./lib/styles/tailwind/output.css"
-  },
-  "license": "MIT"
-}
